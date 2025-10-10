@@ -1,67 +1,70 @@
 {
-  "id": "eu.jumplink.Learn6502",
-  "runtime": "org.gnome.Platform",
-  "runtime-version": "49",
-  "sdk": "org.gnome.Sdk",
-  "sdk-extensions": [
-    "org.freedesktop.Sdk.Extension.node24",
-    "org.freedesktop.Sdk.Extension.typescript"
-  ],
-  "build-options": {
-    "append-path": "/usr/lib/sdk/node24/bin:/usr/lib/sdk/typescript/bin:/app/bin"
-  },
-  "command": "eu.jumplink.Learn6502",
-  "finish-args": [
-    "--device=dri",
-    "--share=ipc",
-    "--socket=fallback-x11",
-    "--socket=wayland"
-  ],
-  "cleanup": [
-    "/include",
-    "/lib/pkgconfig",
-    "/man",
-    "/share/doc",
-    "/share/gtk-doc",
-    "/share/man",
-    "/share/pkgconfig",
-    "*.la",
-    "*.a",
-    "*.map",
-    "*.d.ts",
-    "*.js.map"
-  ],
-  "modules": [
-    {
-      "name": "blueprint-compiler",
-      "buildsystem": "meson",
-      "builddir": true,
-      "cleanup": ["*"],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://gitlab.gnome.org/GNOME/blueprint-compiler/-/archive/0.18.0/blueprint-compiler-0.18.0.tar.gz",
-          "sha256": "51aa472ecd7bd4b32b8baa7ae6768b19810793d4a2a1aba39c5b31b0170cb258"
-        }
-      ]
+    "id": "eu.jumplink.Learn6502",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "49",
+    "sdk": "org.gnome.Sdk",
+    "sdk-extensions": [
+        "org.freedesktop.Sdk.Extension.node24",
+        "org.freedesktop.Sdk.Extension.typescript"
+    ],
+    "build-options": {
+        "append-path": "/usr/lib/sdk/node24/bin:/usr/lib/sdk/typescript/bin:/app/bin"
     },
-    {
-      "name": "Learn6502",
-      "buildsystem": "meson",
-      "sources": [
+    "command": "eu.jumplink.Learn6502",
+    "finish-args": [
+        "--device=dri",
+        "--share=ipc",
+        "--socket=fallback-x11",
+        "--socket=wayland"
+    ],
+    "cleanup": [
+        "/include",
+        "/lib/pkgconfig",
+        "/man",
+        "/share/doc",
+        "/share/gtk-doc",
+        "/share/man",
+        "/share/pkgconfig",
+        "*.la",
+        "*.a",
+        "*.map",
+        "*.d.ts",
+        "*.js.map"
+    ],
+    "modules": [
         {
-          "type": "git",
-          "url": "https://github.com/JumpLink/Learn6502.git",
-          "tag": "v0.6.0",
-          "x-checker-data": {
-            "type": "git",
-            "tag-pattern": "^v(\\d+\\.\\d+\\.\\d+)$",
-            "version-scheme": "semantic",
-            "is-main-source": true,
-            "is-important": true
-          }
+            "name": "blueprint-compiler",
+            "buildsystem": "meson",
+            "builddir": true,
+            "cleanup": [
+                "*"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://gitlab.gnome.org/GNOME/blueprint-compiler/-/archive/0.18.0/blueprint-compiler-0.18.0.tar.gz",
+                    "sha256": "51aa472ecd7bd4b32b8baa7ae6768b19810793d4a2a1aba39c5b31b0170cb258"
+                }
+            ]
+        },
+        {
+            "name": "Learn6502",
+            "buildsystem": "meson",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/JumpLink/Learn6502.git",
+                    "tag": "v0.6.2",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v(\\d+\\.\\d+\\.\\d+)$",
+                        "version-scheme": "semantic",
+                        "is-main-source": true,
+                        "is-important": true
+                    },
+                    "commit": "5900323c3605c8a908120848d5035c5ade520264"
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
