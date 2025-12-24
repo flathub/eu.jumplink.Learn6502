@@ -54,7 +54,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/JumpLink/Learn6502.git",
-                    "tag": "v0.6.2",
+                    "tag": "v0.6.3",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v(\\d+\\.\\d+\\.\\d+)$",
@@ -62,7 +62,7 @@
                         "is-main-source": true,
                         "is-important": true
                     },
-                    "commit": "5900323c3605c8a908120848d5035c5ade520264"
+                    "commit": "351dfff39603513b3d5331c4568fd4b8c0b937e9"
                 }
             ]
         }
