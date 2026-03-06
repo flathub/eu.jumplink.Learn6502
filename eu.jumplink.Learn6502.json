@@ -42,8 +42,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gitlab.gnome.org/GNOME/blueprint-compiler/-/archive/0.18.0/blueprint-compiler-0.18.0.tar.gz",
-                    "sha256": "51aa472ecd7bd4b32b8baa7ae6768b19810793d4a2a1aba39c5b31b0170cb258"
+                    "url": "https://gitlab.gnome.org/GNOME/blueprint-compiler/-/archive/v0.20.0/blueprint-compiler-v0.20.0.tar.gz",
+                    "sha256": "b6d43b474557dc5c591cca693f6d8a82e328fd125261a7e4fe702f2818106427"
                 }
             ]
         },
@@ -54,7 +54,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/JumpLink/Learn6502.git",
-                    "tag": "v0.6.3",
+                    "tag": "v0.6.4",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v(\\d+\\.\\d+\\.\\d+)$",
@@ -62,7 +62,7 @@
                         "is-main-source": true,
                         "is-important": true
                     },
-                    "commit": "0ea29602cf200c50105c4e57777831cdda274f3e"
+                    "commit": "b36928c57ce4a5b4654f5f686f719c3fcb80473b"
                 }
             ]
         }
