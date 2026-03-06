@@ -62,7 +62,8 @@
                         "is-main-source": true,
                         "is-important": true
                     },
-                    "commit": "b36928c57ce4a5b4654f5f686f719c3fcb80473b"
+                    "commit": "b36928c57ce4a5b4654f5f686f719c3fcb80473b",
+                    "disable-submodules": true
                 }
             ]
         }
