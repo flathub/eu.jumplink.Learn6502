@@ -26,15 +26,13 @@
                     "type": "git",
                     "url": "https://github.com/JumpLink/Learn6502.git",
                     "tag": "v0.6.4",
+                    "commit": "b36928c57ce4a5b4654f5f686f719c3fcb80473b",
+                    "disable-submodules": true,
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v(\\d+\\.\\d+\\.\\d+)$",
-                        "version-scheme": "semantic",
-                        "is-main-source": true,
-                        "is-important": true
-                    },
-                    "commit": "b36928c57ce4a5b4654f5f686f719c3fcb80473b",
-                    "disable-submodules": true
+                        "version-scheme": "semantic"
+                    }
                 }
             ]
         }
