@@ -25,15 +25,16 @@
                 {
                     "type": "git",
                     "url": "https://github.com/JumpLink/Learn6502.git",
-                    "tag": "v0.7.0",
-                    "commit": "d98a373084689b4f3d8fdf847e77ed74e589d3ce",
+                    "tag": "v0.8.0",
+                    "commit": "7615f077d4d51c97b02ac0e38e5723ed5eda98a7",
                     "disable-submodules": true,
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v(\\d+\\.\\d+\\.\\d+)$",
                         "version-scheme": "semantic"
                     }
-                }
+                },
+                "gjsify-sources.json"
             ]
         }
     ]
