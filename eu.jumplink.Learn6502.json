@@ -33,7 +33,8 @@
                         "tag-pattern": "^v(\\d+\\.\\d+\\.\\d+)$",
                         "version-scheme": "semantic"
                     }
-                }
+                },
+                "gjsify-sources.json"
             ]
         }
     ]
